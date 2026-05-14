@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Research Portfolio</title>
+  <meta
+    name="description"
+    content="研究内容、業績、経歴を紹介する個人研究ポートフォリオサイトです。"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-brand" href="#home">
+        <span class="brand-mark"></span>
+        <span>Research Portfolio</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="メニューを開閉" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#works">Works</a>
+        <a href="#career">Career</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================
+         HOME
+    ========================================================== -->
+    <section class="hero section-anchor" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="hero-kicker">Researcher Portfolio</p>
+
+          <h1>
+            研究内容と実績が、
+            <span>ひと目で伝わる。</span>
+          </h1>
+
+          <p class="hero-description">
+            ここに氏名、所属、研究の一文紹介を入れます。
+            「何を研究している人か」が最初の画面で伝わることを重視した構成です。
+          </p>
+
+          <div class="hero-tags" aria-label="研究キーワード">
+            <span>Research Field 01</span>
+            <span>Numerical Analysis</span>
+            <span>Experiment</span>
+            <span>Engineering Design</span>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#research">研究を見る</a>
+            <a class="button button-outline" href="#achievements">業績を見る</a>
+            <a class="button button-ghost" href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <aside class="profile-card reveal">
+          <div class="profile-image-wrap">
+            <img
+              src="images/research-main.png"
+              alt="研究紹介画像"
+              class="profile-image"
+            />
+          </div>
+
+          <div class="profile-card-body">
+            <p class="profile-label">Profile</p>
+            <h2>Your Name</h2>
+            <p class="profile-affiliation">
+              Affiliation / Department / Laboratory
+            </p>
+
+            <dl class="profile-meta">
+              <div>
+                <dt>Field</dt>
+                <dd>研究分野を記載</dd>
+              </div>
+              <div>
+                <dt>Focus</dt>
+                <dd>現在の中心課題を記載</dd>
+              </div>
+              <div>
+                <dt>Location</dt>
+                <dd>Tokyo, Japan</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         QUICK FACTS
+    ========================================================== -->
+    <section class="quick-facts reveal">
+      <div class="container facts-grid">
+        <article class="fact-card">
+          <p class="fact-label">Publications</p>
+          <strong class="fact-number">--</strong>
+          <span>査読付き論文</span>
+        </article>
+
+        <article class="fact-card">
+          <p class="fact-label">Presentations</p>
+          <strong class="fact-number">--</strong>
+          <span>学会発表</span>
+        </article>
+
+        <article class="fact-card">
+          <p class="fact-label">Awards</p>
+          <strong class="fact-number">--</strong>
+          <span>受賞・採択</span>
+        </article>
+
+        <article class="fact-card">
+          <p class="fact-label">Projects</p>
+          <strong class="fact-number">--</strong>
+          <span>主な研究テーマ</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         ABOUT
+    ========================================================== -->
+    <section class="section section-anchor" id="about">
+      <div class="container section-grid about-grid">
+        <div class="section-heading reveal">
+          <p class="section-kicker">About</p>
+          <h2>どんな研究者か。</h2>
+          <p>
+            研究の背景、所属、専門、関心のある課題を簡潔にまとめます。
+            長い自己紹介ではなく、研究を見る前に必要な文脈だけを置きます。
+          </p>
+        </div>
+
+        <div class="about-content reveal">
+          <article class="info-card">
+            <h3>Affiliation</h3>
+            <p>
+              所属大学、研究室、課程などを記載します。
+              例：Graduate School / Laboratory / Program
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h3>Research Field</h3>
+            <p>
+              主な研究分野を記載します。
+              技術領域、対象現象、使う手法の3点を揃えると伝わりやすくなります。
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h3>Current Focus</h3>
+            <p>
+              現在もっとも注力しているテーマや、
+              研究上の問いを1〜2文で記載します。
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         RESEARCH
+    ========================================================== -->
+    <section class="section section-soft section-anchor" id="research">
+      <div class="container section-grid research-grid">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Research</p>
+          <h2>研究テーマ。</h2>
+          <p>
+            ここでは「何を明らかにしたいのか」を中心に示します。
+            テーマごとに、課題・方法・狙いが素早く読める構成です。
+          </p>
+        </div>
+
+        <div class="research-list">
+          <article class="research-card reveal">
+            <div class="research-number">01</div>
+            <div class="research-body">
+              <h3>研究テーマ A</h3>
+              <p>
+                研究対象、解決したい問題、使う手法を記載します。
+                背景説明を長くしすぎず、「何が新しいか」が伝わる密度にします。
+              </p>
+              <ul>
+                <li>Key point 01</li>
+                <li>Key point 02</li>
+                <li>Key point 03</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="research-card reveal">
+            <div class="research-number">02</div>
+            <div class="research-body">
+              <h3>研究テーマ B</h3>
+              <p>
+                数値解析、実験、理論など、
+                研究アプローチの違いが分かるように書き分けます。
+              </p>
+              <ul>
+                <li>Method / Model</li>
+                <li>Evaluation / Validation</li>
+                <li>Design Insight</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="research-card reveal">
+            <div class="research-number">03</div>
+            <div class="research-body">
+              <h3>研究テーマ C</h3>
+              <p>
+                今後の展開、応用先、社会的意義などを含めると、
+                研究全体の方向性が見えやすくなります。
+              </p>
+              <ul>
+                <li>Future Development</li>
+                <li>Application</li>
+                <li>Broader Impact</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         ACHIEVEMENTS
+    ========================================================== -->
+    <section class="section section-anchor" id="achievements">
+      <div class="container">
+        <div class="section-heading achievements-heading reveal">
+          <p class="section-kicker">Achievements</p>
+          <h2>業績が、先に見える。</h2>
+          <p>
+            件数と代表成果を分けて掲載します。
+            研究者サイトでは「実績の規模」と「具体例」を両方見せるのが効きます。
+          </p>
+        </div>
+
+        <div class="achievement-grid reveal">
+          <article class="achievement-card">
+            <strong>--</strong>
+            <span>Peer-reviewed Papers</span>
+            <p>査読付き論文</p>
+          </article>
+
+          <article class="achievement-card">
+            <strong>--</strong>
+            <span>Conference Talks</span>
+            <p>国際・国内会議発表</p>
+          </article>
+
+          <article class="achievement-card">
+            <strong>--</strong>
+            <span>Awards / Grants</span>
+            <p>受賞・採択・奨学金など</p>
+          </article>
+        </div>
+
+        <div class="selected-achievements reveal">
+          <div class="subsection-title">
+            <h3>Selected Achievements</h3>
+            <p>特に見せたい成果を3件程度に絞って置きます。</p>
+          </div>
+
+          <div class="selected-list">
+            <article class="selected-item">
+              <p class="item-meta">Journal Article · 2026</p>
+              <h4>代表論文タイトルを記載</h4>
+              <p>
+                論文の新規性や、研究上の位置づけを1〜2文で説明します。
+              </p>
+            </article>
+
+            <article class="selected-item">
+              <p class="item-meta">Conference Presentation · 2025</p>
+              <h4>代表的な発表タイトルを記載</h4>
+              <p>
+                発表内容と得られた知見を短く整理します。
+              </p>
+            </article>
+
+            <article class="selected-item">
+              <p class="item-meta">Award / Fellowship · 2025</p>
+              <h4>受賞・採択名を記載</h4>
+              <p>
+                何が評価されたのか、または研究活動にどう関わるのかを示します。
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         WORKS
+    ========================================================== -->
+    <section class="section section-soft section-anchor" id="works">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Works</p>
+          <h2>論文・発表。</h2>
+          <p>
+            詳細な業績を一覧化します。
+            件数が増えたら、別ページ化してもよい領域です。
+          </p>
+        </div>
+
+        <div class="works-columns">
+          <section class="work-block reveal">
+            <div class="work-block-head">
+              <h3>Publications</h3>
+              <span>Peer-reviewed</span>
+            </div>
+
+            <ol class="bibliography">
+              <li>
+                <strong>Author Name</strong>, Co-author,
+                “Paper title,” <em>Journal Name</em>, Year.
+              </li>
+              <li>
+                <strong>Author Name</strong>, Co-author,
+                “Paper title,” <em>Journal Name</em>, Year.
+              </li>
+            </ol>
+          </section>
+
+          <section class="work-block reveal">
+            <div class="work-block-head">
+              <h3>Presentations</h3>
+              <span>Conferences</span>
+            </div>
+
+            <ol class="bibliography">
+              <li>
+                <strong>Author Name</strong>, “Presentation title,”
+                Conference Name, City, Year.
+              </li>
+              <li>
+                <strong>Author Name</strong>, “Presentation title,”
+                Conference Name, City, Year.
+              </li>
+            </ol>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         CAREER
+    ========================================================== -->
+    <section class="section section-anchor" id="career">
+      <div class="container section-grid career-grid">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Career</p>
+          <h2>経歴。</h2>
+          <p>
+            Education、Experience、Awards などを
+            時系列で整理すると読みやすくなります。
+          </p>
+        </div>
+
+        <div class="timeline-wrap reveal">
+          <section class="career-block">
+            <h3>Education</h3>
+
+            <article class="timeline-entry">
+              <time>20XX – Present</time>
+              <div>
+                <h4>Degree / Program</h4>
+                <p>University / Department / Laboratory</p>
+              </div>
+            </article>
+
+            <article class="timeline-entry">
+              <time>20XX – 20XX</time>
+              <div>
+                <h4>Degree / Program</h4>
+                <p>University / Department</p>
+              </div>
+            </article>
+          </section>
+
+          <section class="career-block">
+            <h3>Experience & Awards</h3>
+
+            <article class="timeline-entry">
+              <time>20XX</time>
+              <div>
+                <h4>Award / Fellowship / Internship</h4>
+                <p>概要を短く記載します。</p>
+              </div>
+            </article>
+
+            <article class="timeline-entry">
+              <time>20XX</time>
+              <div>
+                <h4>Project / Activity</h4>
+                <p>研究や活動の実績を記載します。</p>
+              </div>
+            </article>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         CONTACT
+    ========================================================== -->
+    <section class="section contact-section section-anchor" id="contact">
+      <div class="container contact-card reveal">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2>お問い合わせ。</h2>
+          <p>
+            共同研究、講演、研究内容に関する連絡先をまとめます。
+          </p>
+        </div>
+
+        <div class="contact-links">
+          <a href="mailto:your-email@example.com">your-email@example.com</a>
+          <a href="#">Google Scholar</a>
+          <a href="#">ORCID</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Your Name. All rights reserved.</p>
+      <a href="#home">Back to top</a>
+    </div>
+  </footer>
+</body>
+</html>
