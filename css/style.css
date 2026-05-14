@@ -177,7 +177,7 @@ a {
 .section-kicker {
   margin: 0 0 16px;
   color: var(--accent);
-  font-size: 14px;
+  font-size: 42px;
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -424,6 +424,14 @@ a {
   letter-spacing: -0.045em;
 }
 
+.section-label {
+  margin: 0 0 16px;
+  color: #2f5fd0;
+  font-size: clamp(18px, 2vw, 28px);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
 .section-heading p:last-child,
 .contact-card p {
   margin: 22px 0 0;
@@ -642,6 +650,7 @@ a {
   line-height: 1.35;
   letter-spacing: -0.025em;
 }
+
 
 .selected-item p:last-child {
   margin: 0;
